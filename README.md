@@ -5,7 +5,7 @@ Le monde, en général, et l’humanité, en particulier, sont en transformation
 
 Pour se préparer et faire face à des événements majeurs et des crises, il faut bien comprendre leurs causes, développements et conséquences. De plus, une fois l'événement passé, il faudrait en tirer les "bonnes" conclusions afin de mieux réagir dans des situations similaires à l’avenir. 
 
-En outre, les incidents sont des faits "de caractère secondaire" (selon la définition du \textbf{Larousse}), qui se produisent durant une action qui sera ainsi perturbée. Sans avoir une importance (initiale) excessive, les incidents peuvent générer des complications et des effets plutôt dommageables. Plus particulièrement, les incidents survenus durant des événements majeurs et des crises sont des marqueurs importants pour la mise en évidence d’une certaine structure d'événement. 
+En outre, les incidents sont des faits "de caractère secondaire" (selon la définition du *Larousse*, qui se produisent durant une action qui sera ainsi perturbée. Sans avoir une importance (initiale) excessive, les incidents peuvent générer des complications et des effets plutôt dommageables. Plus particulièrement, les incidents survenus durant des événements majeurs et des crises sont des marqueurs importants pour la mise en évidence d’une certaine structure d'événement. 
 
 Par conséquent, la capacité d’identifier et de classifier de manière appropriée un incident est importante. D'un côté, elle permet de diminuer (et si possible d'éviter) les conséquences négatives et les dysfonctionnements produits par l'incident. D'un autre côté, elle permet de mieux comprendre la situation globale associée à l'incident (surtout si celui-ci se produit dans le cadre d'un événement majeur ou d'une crise). Donc, une taxonomie convenable pour les incidents devient essentielle pour la gestion efficace de l'incident même et de l'environnement qui lui est associé.
 
@@ -13,4 +13,4 @@ D’une manière plus générale, développée au départ à cause du besoin de 
 
 En revenant à la taxonomie des incidents, il convient de reconnaître qu’une classification à la fois détaillée et efficace est difficile à proposer. Ainsi, l’optimisation d’une telle taxonomie peut avoir des conséquences bénéfiques pour la gestion d'événements car une taxonomie appropriée permet non seulement une compréhension rapide et juste de ce qui se passe mais aussi le choix prompt et adapté des moyens d’intervention pour le contrôle de la situation en cours.
 
-Or, le but de ce projet est justement d'optimiser la taxonomie des incidents gérés à l'aide d'un produit logiciel spécialisé réalisé par la société \textbf{TechWan} et qui sera présenté ci-dessous.
+Or, le but de ce projet est justement d'optimiser la taxonomie des incidents gérés à l'aide d'un produit logiciel spécialisé réalisé par la société **TechWan** et qui sera présenté ci-dessous.
