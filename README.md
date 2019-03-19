@@ -1,7 +1,7 @@
 # Doc2Vec et Classification Multinomiale Supervisée - Étude de cas @TechWan
 ## Master Thesis
 ### Introduction
-Selon la définition du \textit{\textbf{Larousse}}, les incidents sont des faits "de caractère secondaire" qui se produisent durant une action qui sera ainsi perturbée.
+Selon la définition du ***Larousse***, les incidents sont des faits "de caractère secondaire" qui se produisent durant une action qui sera ainsi perturbée.
 Sans avoir une importance initiale excessive, les incidents peuvent générer des complications et des effets plutôt dommageables.
 
 Par conséquent, la capacité d’identifier et de classifier de manière appropriée un incident est importante. D'un côté, elle permet de diminuer et, si possible, d'éviter les conséquences négatives et les dysfonctionnements produits par l'incident.
