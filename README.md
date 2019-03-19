@@ -14,4 +14,4 @@ En particulier, l’informatique a besoin et utilise des méthodes de classifica
 En revenant à la taxonomie des incidents, il convient de reconnaître qu’une classification à la fois détaillée et efficace est difficile à réaliser.
 Ainsi, l’optimisation de la classification peut avoir des conséquences bénéfiques pour la gestion d'événements car elle permet non seulement une compréhension rapide et juste de ce qui se passe mais aussi le choix prompt et adapté des moyens d’intervention pour le contrôle de la situation en cours.
 
-Or, la société \textbf{TechWan} qui sera présenté ci-dessous a justement besoin d'optimiser la classification des incidents qu'elle gère à l'aide d'un produit logiciel spécialisé réalisé par elle-même.
+Or, la société **TechWan** qui sera présenté ci-dessous a justement besoin d'optimiser la classification des incidents qu'elle gère à l'aide d'un produit logiciel spécialisé réalisé par elle-même.
