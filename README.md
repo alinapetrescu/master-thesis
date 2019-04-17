@@ -1,17 +1,16 @@
-# Doc2Vec et Classification Multinomiale Supervisée - Étude de cas @TechWan
+# Classification multinomiale et supervisée de comptes rendus d’incidents
 ## Master Thesis
 ### Introduction
-Selon la définition du ***Larousse***, les incidents sont des faits "de caractère secondaire" qui se produisent durant une action qui sera ainsi perturbée.
-Sans avoir une importance initiale excessive, les incidents peuvent générer des complications et des effets plutôt dommageables.
+Dans cette thèse, on s’intéresse à la classification discrète multinomiale supervisée des documents. Trois modèles sont proposés, implémentés à l’aide du langage Python et testés grâce aux données mises à notre disposition par l’entreprise TechWan qui utilise actuellement une suite logicielle pour la gestion opérationnelle et la gestion de crises.
 
-Par conséquent, la capacité d’identifier et de classifier de manière appropriée un incident est importante. D'un côté, elle permet de diminuer et, si possible, d'éviter les conséquences négatives et les dysfonctionnements produits par l'incident.
-D'un autre côté, elle permet de mieux comprendre la situation globale associée à l'incident (surtout si celui-ci se produit dans le cadre d'un événement majeur ou d'une crise).
-Donc, la classification adéquate des incidents par rapport à une taxonomie convenable devient essentielle pour la gestion efficace des incidents même et de l'environnement qui leur est associé.
+Dans ce contexte, les documents sont des comptes rendus ou des exposés des faits décrivant des incidents et leur classification doit être faite en fonction d’un catalogue de catégories d’intervention bien précises. Le but recherché est de prédire la ou les catégories appropriées pour tout nouveau compte rendu à classifier.
 
-D’une manière plus générale, développée au départ à cause du besoin de classification scientifique des espèces du monde vivant, la taxonomie est aujourd'hui utile, voire nécessaire, aussi pour d’autres sciences.
-En particulier, l’informatique a besoin et utilise des méthodes de classification des informations afin de mettre en place des architectures basées sur des entités conceptuelles correspondant à des groupes hiérarchisés appelés taxons.
+Le premier modèle proposé est basé sur la fonction d’ordonnancement BM25. Des définitions ad-hoc par catégorie sont élaborées et la catégorie proposée pour un nouvel exposé des faits est celle qui obtient le plus élevé score de similitude avec cet exposé.
 
-En revenant à la taxonomie des incidents, il convient de reconnaître qu’une classification à la fois détaillée et efficace est difficile à réaliser.
-Ainsi, l’optimisation de la classification peut avoir des conséquences bénéfiques pour la gestion d'événements car elle permet non seulement une compréhension rapide et juste de ce qui se passe mais aussi le choix prompt et adapté des moyens d’intervention pour le contrôle de la situation en cours.
+La deuxième approche présentée est basé sur le modèle Doc2Vec et ses deux versions DBOW et DM. Pour chaque version, on crée des modèles qui prennent en compte soit des catégories principales (chacune avec plus de 1000 exposés des faits associés), soit des super-catégories regroupant des catégories principales apparentées. De plus, chaque tel modèle a deux variantes de labellisation des documents : par catégorie ou avec identifiants uniques.
 
-Or, la société **TechWan** qui sera présenté ci-dessous a justement besoin d'optimiser la classification des incidents qu'elle gère à l'aide d'un produit logiciel spécialisé réalisé par elle-même.
+La troisième approche est basée sur le modèle LogisticRegression. En fait, chaque modèle Doc2Vec déjà entraîné infère les vecteurs numériques correspondant aux documents à classifier qui constituent ensuite l’ensemble d’entraînement d’un modèle LogisticRegression associé.
+
+Finalement, on compare les modèles proposés en fonction de leur exactitude. L’approche BM25 s’avère particulièrement intéressante pour des catégories avec un nombre réduit d’exposés des faits associés. Par contre, si les données sont suffisantes pour implémenter un apprentissage automatique, les deux autres modèles sont préférés. Pour l’approche Doc2Vec, on recommande la labellisation des documents sans doublons par identifiants uniques. Les meilleures exactitudes correspondent à l’approche LogisticRegression basée sur un modèle Doc2Vec en version DBOW et avec labellisation par catégorie. En outre, une classification en cascade super-catégories→catégories principales→catégories ordinaires est envisageable.
+
+Finalement, on présente des recommandations pour la rédaction des exposés des faits et la réorganisation de leur taxonomie, ainsi que des suites possibles du travail.
