@@ -1,6 +1,5 @@
 # Classification multinomiale et supervisée de comptes rendus d’incidents
 ## Master Thesis
-### Introduction
 Dans cette thèse, on s’intéresse à la classification discrète multinomiale supervisée des documents. Trois modèles sont proposés, implémentés à l’aide du langage Python et testés grâce aux données mises à notre disposition par l’entreprise TechWan qui utilise actuellement une suite logicielle pour la gestion opérationnelle et la gestion de crises.
 
 Dans ce contexte, les documents sont des comptes rendus ou des exposés des faits décrivant des incidents et leur classification doit être faite en fonction d’un catalogue de catégories d’intervention bien précises. Le but recherché est de prédire la ou les catégories appropriées pour tout nouveau compte rendu à classifier.
